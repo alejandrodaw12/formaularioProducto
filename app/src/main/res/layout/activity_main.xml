@@ -119,34 +119,37 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rb_envioUrgente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/enivo_urgente_5"
             android:textColor="@color/white"
             android:textSize="16sp"
-            tools:ignore="TextContrastCheck" />
+            android:onClick="asignarEnvio"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rb_envioNormal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/enivo_normal_4"
             android:textColor="@color/white"
             android:textSize="16sp"
+            android:onClick="asignarEnvio"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rb_envioLento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:text="@string/enivo_lento_3"
             android:textColor="@color/white"
             android:textSize="16sp"
+            android:onClick="asignarEnvio"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
     </RadioGroup>
 
@@ -156,6 +159,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="192dp"
         android:text="@string/siguente"
+        android:onClick="siguiente"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/textView3"
         app:layout_constraintHorizontal_bias="1.0"
